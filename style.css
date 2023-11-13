@@ -1,0 +1,426 @@
+html,body {
+	margin: unset;
+	scroll-behavior: smooth;
+	text-align: center;
+}
+input{
+  text-indent: 10px;
+}
+*:focus {
+	outline: none;
+}
+.flex{
+	display: flex;
+}
+.flex1{
+	display: flex;
+}
+h1.h1title {
+    font-family: 'Rock Salt';
+}
+a {
+    color: white !important;
+    text-decoration: none;
+}
+/*nav*/
+.headnav {
+    background-color: #E23E57;
+    position: fixed;
+    width: 100vW;
+}
+h3.headtitle {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+}
+ul.navul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+li.navli {
+    font-size: 1.5em;
+    margin-left: 40px;
+    font-family: cursive;
+    color: white;
+}
+li.navli.navlispace {
+    margin-left: 50%;
+    font-size: 1.5em;
+}
+/*slide*/
+.headslide {
+    height: 100vH;
+    background: url(image/back1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.headslidefilter {
+    height: 100vH;
+    background: #000000b5;
+    background-attachment: fixed;
+}
+p.headp {
+    color: white;
+    font-size: 4.5em;
+    font-family: 'Rock Salt';
+}
+h1.headh1 {
+    font-size: 5em;
+    color: white;
+    font-family: 'Rock Salt';
+    line-height: 150px;
+}
+/*about*/
+.divabout {
+    height: 100vH;
+}
+.divpabout {
+    width: 50%;
+    height: 75vH;
+}
+p.aboutp {
+    font-size: 1.5em;
+    text-align: justify;
+    margin-top: 10px;
+    font-family: cursive;
+}
+img.imgteam {
+    width: 90%;
+    margin-top: 15%;
+}
+/*service*/
+.divservice {
+    height: 100vH;
+    background-color: #E23E57;
+    background-image: url(image/pattern.svg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1.h1title.h1clr {
+    color: white;
+}
+.divserrow {
+    width: 35%;
+    height: 75vH;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: white;
+    margin: 5px;
+}
+ul.ulservices {
+    list-style: none;
+    text-align: left;
+    color: white;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+h2.h2serv {
+    text-align: center;
+    font-family: fantasy;
+}
+li.liservices {
+    line-height: 40px;
+}
+/*contact*/
+.divcontact {
+    height: 100vH;
+}
+.divconrow {
+    width: 50%;
+    height: 75vH;
+}
+a.acontact {
+    color: blue !important;
+}
+h2.h2contact {
+    font-family: 'Rock Salt';
+    font-size: 2em;
+    margin-top: 25%;
+    color: #E23E57;
+}
+p.pcontact {
+    font-family: cursive;
+    font-size: 2em;
+    color: #88304E;
+}
+i#iconclr {
+    color: #e23e57;
+}
+i#iconclrsize {
+    color: #e23e57;
+    font-size: 2.5em;
+    margin: 10px;
+}
+/*footer*/
+footer.footdiv {
+    height: 10vH;
+    background: #e23e57;
+}
+p.footp {
+    color: white;
+}
+
+
+/*Mobile nav*/
+.headmob {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 1;
+}
+p.headtitle {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    font-size: 2em;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+#wrapper1 {
+    height: 50px;
+    background: #E23E57;
+    position: relative;
+}
+.logo1 {
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.title1 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-top: 0;
+    margin-top: 10px;
+    line-height: unset;
+}
+#menuBtn { 
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    background: transparent; 
+    color: white; 
+    line-height: 50px; 
+    text-align: center;
+}
+i#bar {
+    font-size: 2em;
+}
+#myMenu { display: none; 
+}
+#myMenu ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-family: cursive;
+}
+#myMenu li {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background: #E23E57;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    margin-left: 50%;
+}
+.ul2 {
+    list-style: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-inline-start: unset;
+    margin-block-start: unset;
+    margin: 0px;
+}
+a.clr {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+.mob-nav {
+    display: flex;
+    width: 100%;
+}
+/*Mobile/Tab Nav Section End*/
+
+
+
+
+/*Responsive*/
+/*Responsive mobile*/
+@media only screen and (max-width: 480px) {
+.headnav {
+    display: none;
+}
+.headmob {
+	display: block;
+}
+p.headp {
+    font-size: 2.5em;
+}
+h1.headh1 {
+    font-size: 3em;
+    line-height: 60px;
+}
+.flex {
+    display: block;
+}
+.flex1 {
+    display: block;
+}
+.divabout {
+    height: auto;
+}
+.divpabout {
+    width: 100%;
+    height: auto;
+}
+p.aboutp {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+img.imgteam {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.divservice {
+    height: auto;
+    padding-bottom: 10px
+}
+.divserrow {
+    width: auto;
+    height: auto;
+}
+.divcontact {
+    height: auto;
+}
+.divconrow {
+    width: 100%;
+    height: fit-content;
+}
+h2.h2contact {
+    margin-top: 5%;
+}
+}
+
+/* media query tab */
+@media screen and (min-width : 481px) and (max-width: 768px) {
+.headnav {
+    display: none;
+}
+.headmob {
+	display: block;
+}
+p.headp {
+    font-size: 2.5em;
+}
+h1.headh1 {
+    font-size: 4.2em;
+    line-height: 90px;
+}
+.flex {
+    display: block;
+}
+.flex1 {
+    display: block;
+}
+.divabout {
+    height: auto;
+}
+.divpabout {
+    width: 100%;
+    height: auto;
+}
+p.aboutp {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+img.imgteam {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.divservice {
+    height: auto;
+    padding-bottom: 10px
+}
+.divserrow {
+    width: auto;
+    height: auto;
+}
+.divcontact {
+    height: auto;
+}
+.divconrow {
+    width: 100%;
+    height: fit-content;
+}
+h2.h2contact {
+    margin-top: 5%;
+}
+}
+
+/* media query lap*/
+@media screen and (min-width : 769px) and (max-width: 1024px) {  
+
+.headnav {
+    display: none;
+}
+.headmob {
+	display: block;
+}
+p.headp {
+    font-size: 2.5em;
+}
+h1.headh1 {
+    font-size: 4.2em;
+    line-height: 90px;
+}
+.flex {
+    display: block;
+}
+.flex1 {
+    display: block;
+}
+.divabout {
+    height: auto;
+}
+.divpabout {
+    width: 100%;
+    height: auto;
+}
+p.aboutp {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+img.imgteam {
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.divservice {
+    height: auto;
+    padding-bottom: 10px
+}
+.divserrow {
+    width: auto;
+    height: auto;
+}
+.divcontact {
+    height: auto;
+}
+.divconrow {
+    width: 100%;
+    height: fit-content;
+}
+} 
+
